@@ -18,37 +18,37 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Work</a>
+                <a class="nav-link" href="#work">Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link Contact">Contact</a>
+                <a class="nav-link Contact" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <section id="home" class="home container">
-          <div class="row d-flex align-items-center">
-              <div class="col-8">
+          <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+              <div class="col-12 col-md-8">
                   <h3 class="fw-Normal">Hi! I am</h3>
                   <h1 class="fw-bold">Khozyana</h1>
                   <p class="fw-lighter">i am front end developer based in indonesia</p>
                   <a class="btn button" href="images/potrait.jpeg" download="">Resume</a>
               </div>
-              <div class="col-4">
-                  <img src="images/potrait.jpeg" class="img-thumbnail w-75" alt="potrait">
+              <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
+                  <img src="images/potrait.jpeg" class="img-thumbnail" alt="potrait">
               </div>
           </div>
-          <div class="arrow w-100 d-flex align-items-center flex-column mt-5">
-              <a class="text-decoration-none text-dark" href="#about">More info</a>
+          <a href="#about" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5">
+              <div class=" text-dark" >More info</div>
               <img id="arrow" class="mt-2" src="images/arrow.svg" alt="arrow icon">
-          </div>
+          </a>
       </section>
       <section id="about" class="about container">
         <p>hi, my name is khozyana. I am a front end developer. I study at Proklamasi University 45 Yogyakarta, majoring in information technology. I can use html, css, jquery, bootstrap, javascript and github.</p>
@@ -97,10 +97,10 @@
       </section>
       <section id="work" class="work container">
         <div class="row d-flex align-items-center gap-5">
-          <div class="col">
+          <div class="col-12 col-5">
             <p>A front-end developer creates websites languages such as HTML, CSS, and JavaScript that allow users to access and interact with the site or app. When you visit a website, the design elements you see were created by a front-end developer.</p>
           </div>
-          <div class="col work-img">
+          <div class="col-12 col-6 work-img">
             <div id="work-1" class="work-img-item">
               <img src="images/work-1.png" alt="work 1">
             </div>
@@ -115,20 +115,20 @@
       </section>
       <section id="contact" class="contact container">
         <div class="row d-flex align-items-center gap-5">
-          <div class="col">
+          <div class="col-12 col-lg-6">
             <p>If you are interested in collaborating or need website creation services, you can contact me via my social media accounts or by filling out this form.</p>
             <div class="row">
               <div class="col d-flex align-items-center">
-                <img src="images/Instagram.svg" alt="Instagram icon">
-                <p class="fw-semibold fs-4">@khozyana14</p>
+                <img class="w-25" src="images/Instagram.svg" alt="Instagram icon">
+                <p class="mb-0 ms-2">@khozyana14</p>
               </div>
               <div class="col d-flex align-items-center">
-                <img src="images/Twitter.svg" alt="Twitter icon">
-                <p class="fw-semibold fs-3">@cozycale_</p>
+                <img class="w-25" src="images/Twitter.svg" alt="Twitter icon">
+                <p class="mb-0 ms-2">@cozycale_</p>
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-lg-5">
             <form class="contact-form" onsubmit="onFormSubmit(event)">
               <div class="mb-3">
                 <label for="inp_email" class="form-label">Email address</label>
